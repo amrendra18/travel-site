@@ -14,7 +14,8 @@ gulp.task('watch', function(){
 		server: {
 			baseDir: "app"
 		},
-		open: false
+		open: false,
+		port: process.env.PORT || 8080,
 	});
 
 	watch('./app/index.html', function(){
